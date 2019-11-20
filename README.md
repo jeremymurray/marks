@@ -19,18 +19,25 @@ Usage
 
 * `m <name>` to create a named shortcut to the current directory. Example: `m docs`
 * `j <name>` to follow a given shortcut. Example: `j docs`
+* `j` to jump to the last jumped shortcut or to the previous folder if currently in the last jumped shortcut.
 * `unmark <name>` to delete a given shortcut. Example: `unmark docs`
 * `marks` to print all available shortcuts.
 
 Example session:
 
-    C:\Windows> mark win
+    C:\Windows> m win
     
     C:\Windows> marks
     win -> C:\Windows
     
     C:\Windows> cd ..
     
-    C:\> jump win
+    C:\> j win
     
-    C:\Windows>
+    C:\Windows> d:
+
+    D:\> j
+
+    C:\Windows> j
+
+    D:\>
